@@ -1,0 +1,55 @@
+.ql-mention-list-container {
+  width: 270px;
+  border: 1px solid #F0F0F0;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 12px 0 rgba(30, 30, 30, 0.08);
+  z-index: 9001;
+}
+
+.ql-mention-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+.ql-mention-list-item {
+  cursor: pointer;
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  padding: 0 20px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+
+.ql-mention-list-item + .ql-mention-list-item {
+  padding-top: 6px;
+}
+
+.ql-mention-list-item img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  -o-object-fit: cover;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.ql-mention-list-item.selected {
+  background-color: #D3E1EB;
+  text-decoration: none;
+}
+
+#tdt-editor a{
+  display: inline-block;
+  min-width: 50px;
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #9c98e1;
+  color: #333;
+  text-decoration: none;
+}
