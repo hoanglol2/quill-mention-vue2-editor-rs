@@ -1,5 +1,5 @@
 .ql-mention-list-container {
-  width: 270px;
+  min-width: 340px;
   border: 1px solid #F0F0F0;
   border-radius: 4px;
   background-color: #FFFFFF;
@@ -20,7 +20,7 @@
   height: 44px;
   line-height: 44px;
   font-size: 16px;
-  padding: 0 20px;
+  padding: 7px 10px;
   vertical-align: middle;
   display: flex;
   align-items: center;
@@ -31,25 +31,32 @@
 }
 
 .ql-mention-list-item img {
-  width: 35px;
-  height: 35px;
+  width: 27px;
+  height: 27px;
   object-fit: cover;
   -o-object-fit: cover;
-  border-radius: 50%;
-  margin-right: 6px;
+  border-radius: 3px;
+  margin-right: 4px;
 }
 
 .ql-mention-list-item.selected {
-  background-color: #D3E1EB;
   text-decoration: none;
+  color: #FFF;
+  background-color: #578dc9;
 }
 
 #tdt-editor a{
-  display: inline-block;
-  min-width: 50px;
-  font-size: 14px;
-  padding: 5px;
-  border: 1px solid #9c98e1;
-  color: #333;
   text-decoration: none;
+  display: inline-flex;
+  max-width: 173px;
+  max-height: 26px;
+  line-height: 13px;
+  font-size: 13px;
+  padding: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-radius: 3px;
+  border: 1px solid #215ab2;
+  color: #215ab2;
 }
